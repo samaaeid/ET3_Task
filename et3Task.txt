@@ -1,0 +1,15 @@
+SELECT *
+FROM ET3_Task
+WHERE Calories = (SELECT MAX(Calories) FROM ET3_Task);
+
+SELECT Beverage_category,AVG(Calories) AS Calories_avarage
+FROM ET3_Task
+GROUP BY Beverage_category
+ORDER BY Calories_avarage;
+
+SELECT AVG(Calories) FROM ET3_Task;
+
+SELECT * 
+FROM ET3_Task
+WHERE Calories < (SELECT AVG(Calories) FROM ET3_Task)
+ORDER BY Calories;
