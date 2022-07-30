@@ -1,3 +1,3 @@
 # ET3_Task
 Database task
-Data scince task
+Data science task
